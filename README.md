@@ -13,9 +13,9 @@ This analysis is an extension of my previous project with Sneakbag. I incorporat
 |--------------------------------------------------------|
 | 1. Holiday VS Non-Holiday                              | 
 | 2. Rainy Day Vs Dry                                    | 
-| 3. Correlation between Rainy days with overall revenue |                             | 
-| 4. Weekday Performance                                 | 
-| 5. Pattern of revenue after rainy day                  |
+| 3. Correlation between Rainy days with overall revenue |                             
+| 4. Pattern of revenue after rainy day                  | 
+| 5. Weekday Performance                                 |
 
 ## Result and Findings
 
@@ -43,4 +43,25 @@ From this result, although the difference in numbers is slight, it’s evident t
 |--------------------------------------------------------|
 | -0.0054652591939022138                                 | 
 
-Now, it is getting more clearer from here that 
+Now, it is getting more clearer from here that there is no significant relation between Rainy day with Revenue since the result showing -0.00546. It means that the relationship between Rainy day with Revenue is very weak negative correlation. However, there might be another pattern of revenue spikes after rainy days, so I conducted an additional analysis to explore that.
+
+4. Pattern of revenue after rainy day
+
+| **RainLagLabel**          | **NumDays**         | **Average Revenue**        | 
+|---------------------------|---------------------|----------------------------|
+| Day After Rain (1-day lag)| 59                  | 295762.71                  | 
+| Day After Rain (2-day lag)| 13                  | 293846.15                  | 
+| Day After Rain (3-day lag)| 7                   | 366428.57                  | 
+| Not After Rain            | 13                  | 449615.38                  | 
+
+From this result, the spike in revenue occurs on Day 3 after rain, reaching an average of IDR 366,428, which is IDR 72,582 higher than the day before (Day 2 after rain).
+
+This marks the highest average revenue among the three post-rain days. Although rainy days don't appear to immediately affect revenue, this pattern may suggest a delayed response — where customers postpone visits and return a few days later.
+
+That said, the highest overall revenue still occurs on days not following recent rain, indicating that dry weather remains most favorable for business activity.
+
+5. Weekday Performance
+
+Lastly, I wanted to find out which day perform better with generating 
+ 
+
